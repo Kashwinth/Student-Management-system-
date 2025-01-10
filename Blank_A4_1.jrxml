@@ -1,0 +1,113 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="Blank_A4_1" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="87dd3a56-4f6a-4a3f-9253-77691c66845e">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="jasperstudnet"/>
+	<query language="SQL"><![CDATA[SELECT r.name AS reportcard_name, r.class AS reportcard_class, r.phy AS physics, r.chem AS chemistry, r.math AS maths, f.Feeid, f.Status AS fee_status FROM reportcard r INNER JOIN feesubmit f ON r.id = f.id;]]></query>
+	<field name="reportcard_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name"/>
+		<property name="com.jaspersoft.studio.field.label" value="reportcard_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="reportcard"/>
+	</field>
+	<field name="reportcard_class" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="class"/>
+		<property name="com.jaspersoft.studio.field.label" value="reportcard_class"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="reportcard"/>
+	</field>
+	<field name="physics" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="phy"/>
+		<property name="com.jaspersoft.studio.field.label" value="physics"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="reportcard"/>
+	</field>
+	<field name="chemistry" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="chem"/>
+		<property name="com.jaspersoft.studio.field.label" value="chemistry"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="reportcard"/>
+	</field>
+	<field name="maths" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="math"/>
+		<property name="com.jaspersoft.studio.field.label" value="maths"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="reportcard"/>
+	</field>
+	<field name="Feeid" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Feeid"/>
+		<property name="com.jaspersoft.studio.field.label" value="Feeid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="feesubmit"/>
+	</field>
+	<field name="fee_status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Status"/>
+		<property name="com.jaspersoft.studio.field.label" value="fee_status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="feesubmit"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="17d8424a-f2cc-45cc-9cc3-c852f5db1b64" x="118" y="10" width="318" height="59" fontName="Arial Black" fontSize="37.0">
+			<text><![CDATA[Student Report]]></text>
+		</element>
+	</title>
+	<pageHeader height="4" splitType="Stretch"/>
+	<columnHeader height="46" splitType="Stretch">
+		<element kind="staticText" uuid="d21da742-e498-4fd0-bbe6-186463329623" x="-10" y="10" width="80" height="30">
+			<text><![CDATA[reportcard_name]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c2701139-4008-40d7-a764-3ee849f976eb"/>
+		</element>
+		<element kind="staticText" uuid="1cb24eb1-ce4c-49b5-95af-e9a7152b2634" x="110" y="10" width="80" height="30">
+			<text><![CDATA[reportcard_class]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1859fca3-2726-4f03-a9d7-4df95ac8098f"/>
+		</element>
+		<element kind="staticText" uuid="fd3e29fa-1d7b-4c85-88ba-408c708fc0b6" x="220" y="8" width="60" height="30">
+			<text><![CDATA[physics]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b703ae80-16e0-4362-a79c-e2376f5581b0"/>
+		</element>
+		<element kind="staticText" uuid="66362d23-5d79-4759-8e88-fb633b0c0c53" x="290" y="10" width="50" height="30">
+			<text><![CDATA[chemistry]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f7f4d601-bd04-40db-a213-ca2539d165f5"/>
+		</element>
+		<element kind="staticText" uuid="daf461fd-a279-4c51-8ca6-66edc7d4e52d" x="360" y="10" width="60" height="30">
+			<text><![CDATA[maths]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a5cb26fc-1536-44c8-83ea-4fc328282044"/>
+		</element>
+		<element kind="staticText" uuid="2766468c-0e44-416b-a737-7243e1b01864" x="430" y="10" width="50" height="30">
+			<text><![CDATA[Feeid]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a224c807-6ebe-4530-b245-877d213fa583"/>
+		</element>
+		<element kind="staticText" uuid="1ef9c3d0-d1e3-45f1-9eeb-d7d7bb36abc0" x="490" y="10" width="70" height="30">
+			<text><![CDATA[fee_status]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ad2f0fc4-2391-4da3-9da6-a89ba02f243d"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="46" splitType="Stretch">
+			<element kind="textField" uuid="21641036-d1a7-486d-8f1c-79068461c173" x="-11" y="10" width="100" height="30">
+				<expression><![CDATA[$F{reportcard_name}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c2701139-4008-40d7-a764-3ee849f976eb"/>
+			</element>
+			<element kind="textField" uuid="6c64c116-7d70-424b-bd5a-62e395679597" x="110" y="10" width="90" height="30">
+				<expression><![CDATA[$F{reportcard_class}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1859fca3-2726-4f03-a9d7-4df95ac8098f"/>
+			</element>
+			<element kind="textField" uuid="9fc83c67-700c-4552-a57c-f9ce20c56e48" x="220" y="10" width="60" height="30">
+				<expression><![CDATA[$F{physics}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b703ae80-16e0-4362-a79c-e2376f5581b0"/>
+			</element>
+			<element kind="textField" uuid="22742794-1a29-4e0b-881a-6e0cc1329204" x="290" y="10" width="60" height="30">
+				<expression><![CDATA[$F{chemistry}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f7f4d601-bd04-40db-a213-ca2539d165f5"/>
+			</element>
+			<element kind="textField" uuid="b6ad04b5-938b-49b7-a3ef-3f6b77bff0fb" x="360" y="10" width="60" height="30">
+				<expression><![CDATA[$F{maths}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a5cb26fc-1536-44c8-83ea-4fc328282044"/>
+			</element>
+			<element kind="textField" uuid="e3cf77d8-f32e-41dc-8770-c8739eb7f414" x="430" y="12" width="50" height="30">
+				<expression><![CDATA[$F{Feeid}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a224c807-6ebe-4530-b245-877d213fa583"/>
+			</element>
+			<element kind="textField" uuid="8017d32d-5740-43d3-bfe4-d6be71e38fb1" x="490" y="12" width="70" height="30">
+				<expression><![CDATA[$F{fee_status}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ad2f0fc4-2391-4da3-9da6-a89ba02f243d"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="6" splitType="Stretch"/>
+	<pageFooter height="5" splitType="Stretch"/>
+	<summary height="4" splitType="Stretch"/>
+</jasperReport>
